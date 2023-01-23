@@ -1,0 +1,6 @@
+BootStrap: docker
+From: pytorch/pytorch:1.13.1-cuda11.6-cudnn8-runtime
+
+%post
+pip install pyg-lib torch-scatter torch-sparse torch-cluster torch-spline-conv -f https://data.pyg.org/whl/torch-1.13.0+cu117.html
+pip install torch torch-geometric 
